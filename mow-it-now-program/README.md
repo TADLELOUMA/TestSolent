@@ -36,7 +36,7 @@ To program the mower, we provide it with an input file constructed as follows:
 * When a mower completes a series of instructions, it communicates its final position and orientation.
 
 ## Author
-* Thierno Amadou DIALLO - [TADLELOUMA](https://github.com/romankh3)
+* Thierno Amadou DIALLO - [TADLELOUMA](https://github.com/TADLELOUMA/PROJETS)
 
 ## Clone project
 * git clone git@github.com:TADLELOUMA/TestSolent.git
