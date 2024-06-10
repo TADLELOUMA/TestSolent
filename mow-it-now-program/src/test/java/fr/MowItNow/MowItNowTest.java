@@ -1,11 +1,11 @@
 package fr.MowItNow;
 
 
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
-
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
+
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 
 /**
@@ -20,10 +20,8 @@ public class MowItNowTest {
         PrintStream originalOut = System.out;
         System.setOut(new PrintStream(outputStream));
 
-        String[] args = {};
-        MowItNow.main(args);
-        //MowItNow.main(args);
-        
+        String[] args = {"src/test/java/fr/MowItNow/input.txt"};
+        MowItNow.main(args);        
         // Restore the original System.out
         System.setOut(originalOut);
 
