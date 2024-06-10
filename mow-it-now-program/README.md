@@ -1,26 +1,44 @@
-## Overview
-Repository with preconfigured maven project with junit5 configuration on a board.
+## About The Project
+MowItNow has decided to develop an automatic lawnmower for rectangular surfaces. 
+The mower can be programmed to cover the entire surface. The position of the mower is represented by a combination of coordinates (x,y) and a letter indicating orientation in English cardinal notation (N, E, W, S).
 
-## Building
-...
+## Prerequisites
+Java
+Junit
+maven
 
-## Troubleshooting
-...
+## Problem description
+The lawn is divided into grids to simplify navigation. For example, the position of the mower might be ‘0, 0, N’, meaning that it is in the bottom left-hand corner of the lawn, facing north.
 
-## Release Notes
-Can be found in [RELEASE_NOTES](RELEASE_NOTES.md).
+## Controls
+To control the mower, send it a simple sequence of letters:
 
-## Authors
-* Roman Beskrovnyi - [romankh3](https://github.com/romankh3)
+D: Turn the mower 90° to the right.
+L: Turns the mower 90° to the left.
+A: Moves the mower forward one square in the direction it is facing.
 
-## Acknowledgments
-...
+## Restrictions
 
-## Contributing
-Please, follow [Contributing](CONTRIBUTING.md) page.
+* If the position after movement is outside the lawn, the mower does not move, retains its orientation and processes the next command.
+* We assume that the square directly north of position (x, y) has coordinates (x, y+1).
 
-## Code of Conduct
-Please, follow [Code of Conduct](CODE_OF_CONDUCT.md) page.
+## Input File
+To program the mower, we provide it with an input file constructed as follows:
 
-## License
-This project is Apache License 2.0 - see the [LICENSE](LICENSE) file for details
+The first line corresponds to the coordinates of the top right-hand corner of the lawn, those of the bottom left-hand corner are assumed to be (0,0).
+The rest of the file is used to control all the mowers deployed. Each mower has two lines:
+The first line gives the initial position of the mower, as well as its orientation (e.g.: 1 2 N).
+The second line is a series of instructions telling the mower to explore the lawn (e.g. GAGAGAGAA).
+
+## Sequence
+
+* Each mower moves sequentially: the second mower does not move until the first has completed its series of instructions.
+* When a mower completes a series of instructions, it communicates its final position and orientation.
+
+## Author
+* Thierno Amadou DIALLO - [TADLELOUMA](https://github.com/romankh3)
+
+## Clone project
+git clone git@github.com:TADLELOUMA/TestSolent.git
+cd mow-it-now-program
+
