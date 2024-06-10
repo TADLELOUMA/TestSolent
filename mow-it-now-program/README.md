@@ -46,6 +46,7 @@ To program the mower, we provide it with an input file constructed as follows:
 go to the MowItNow class, which contains the main execute the main function with Intellij idea or vscode
 
 # Second method
+- cd mow-it-now-program
 - mvn clean install
 - java -jar .\target\mow-it-now-program-1.0-SNAPSHOT.jar
 
