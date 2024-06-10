@@ -43,9 +43,9 @@ To program the mower, we provide it with an input file constructed as follows:
 go to the MowItNow class, which contains the main execute the main function with Intellij idea or vscode
 
 ##  Run the tests
-* Test for the main class
+# Test for the main class
 - go to the MowItNowTest class, which includes shouldTestProgramMain execute the main function with Intellij idea or vscode
-* Test for the InputReader class
+# Test for the InputReader class
 -go to the InputReaderTest class, which includes shouldTestProgramInputReader execute the main function with Intellij idea or vscode
 
 ## Author
