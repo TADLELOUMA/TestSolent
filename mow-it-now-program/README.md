@@ -5,7 +5,10 @@ The mower can be programmed to cover the entire surface. The position of the mow
 ## Prerequisites
 - Java
 - Junit
-- maven
+- vscode
+- intellij
+
+* Install java runner extensions
 
 ## Problem description
 The lawn is divided into grids to simplify navigation. For example, the position of the mower might be ‘0, 0, N’, meaning that it is in the bottom left-hand corner of the lawn, facing north.
@@ -34,6 +37,16 @@ To program the mower, we provide it with an input file constructed as follows:
 
 * Each mower moves sequentially: the second mower does not move until the first has completed its series of instructions.
 * When a mower completes a series of instructions, it communicates its final position and orientation.
+
+## Run the programme
+
+go to the MowItNow class, which contains the main execute the main function with Intellij idea or vscode
+
+##  Run the tests
+* Test for the main class
+go to the MowItNowTest class, which includes shouldTestProgramMain execute the main function with Intellij idea or vscode
+* Test for the InputReader class
+go to the InputReaderTest class, which includes shouldTestProgramInputReader execute the main function with Intellij idea or vscode
 
 ## Author
 * Thierno Amadou DIALLO - [TADLELOUMA](https://github.com/TADLELOUMA/PROJETS)
