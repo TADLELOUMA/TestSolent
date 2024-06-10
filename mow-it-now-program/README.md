@@ -44,9 +44,9 @@ go to the MowItNow class, which contains the main execute the main function with
 
 ##  Run the tests
 * Test for the main class
-go to the MowItNowTest class, which includes shouldTestProgramMain execute the main function with Intellij idea or vscode
+- go to the MowItNowTest class, which includes shouldTestProgramMain execute the main function with Intellij idea or vscode
 * Test for the InputReader class
-go to the InputReaderTest class, which includes shouldTestProgramInputReader execute the main function with Intellij idea or vscode
+-go to the InputReaderTest class, which includes shouldTestProgramInputReader execute the main function with Intellij idea or vscode
 
 ## Author
 * Thierno Amadou DIALLO - [TADLELOUMA](https://github.com/TADLELOUMA/PROJETS)
