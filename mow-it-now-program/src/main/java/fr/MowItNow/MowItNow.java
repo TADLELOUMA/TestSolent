@@ -1,6 +1,5 @@
 package fr.MowItNow;
 
-import java.io.File;
 import java.util.Scanner;
 
 import fr.MowItNow.implementation.InputReader;
@@ -11,11 +10,6 @@ import fr.MowItNow.implementation.LawnImpl;
  */
 public class MowItNow {
 
-    public static String mowItNow(InputReader input){
-        LawnImpl lawn = input.getLawn();
-        return lawn.moveMowers();
-
-    }
     public static void main(String[] args) {
         String filePath = " ";
         if(args.length == 1){
@@ -32,7 +26,7 @@ public class MowItNow {
         }
         
         InputReader input = new InputReader(filePath);
-        String output = mowItNow(input);
-        System.out.println(output);
+        LawnImpl lawn = input.getLawn();
+        System.out.println(lawn.moveMowers());
     }
 }

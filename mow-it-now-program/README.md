@@ -10,6 +10,8 @@ The mower can be programmed to cover the entire surface. The position of the mow
 
 * Install java runner extensions
 
+* Install mvn visit the [How to Install Maven on Windows](https://phoenixnap.com/kb/install-maven-windows)
+
 ## Problem description
 The lawn is divided into grids to simplify navigation. For example, the position of the mower might be ‘0, 0, N’, meaning that it is in the bottom left-hand corner of the lawn, facing north.
 
@@ -40,7 +42,12 @@ To program the mower, we provide it with an input file constructed as follows:
 
 ## Run the programme
 
+# First method
 go to the MowItNow class, which contains the main execute the main function with Intellij idea or vscode
+
+# Second method
+- mvn clean install
+- java -jar .\target\mow-it-now-program-1.0-SNAPSHOT.jar
 
 ##  Run the tests
 # Test for the main class
